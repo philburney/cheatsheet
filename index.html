@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet (html/css)</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+         <h1>Html/Css Cheatsheet</h1>
+    </header>
+    <main>
+          <h2>Table Properties</h2>
+          
+          <section class="tble">
+          <h3>Table Parts</h3>
+          <table>
+                 <thead>
+                      <tr>
+                          <th>Element</th>
+                          <th>Description</th>
+                      </tr>
+                  </thead>
+               <tbody>
+                   <tr>
+                       <td>&lttable&gt</td>
+                       <td>The main table container</td>
+                   </tr>
+                   <tr>
+                       <td>&ltthead&gt</td>
+                       <td>Contains the column Headings</td>
+                   </tr>
+                   <tr>
+                       <td>&lttbody&gt</td>
+                       <td>Contains the main cells</td>
+                    </tr>
+                    <tr>
+                        <td>&lttfoot&gt</td>
+                        <td>Contains the table Footer</td>
+                     </tr>      
+               </tbody>   
+              
+          </table>
+          <p>
+              Each table row must start with tr and then within that add td for the contents of each cell in the row. The exception is the header cells whose contents can be set with th.</p>
+            <h3>Table Formatting</h3>
+            <p>You can format tables by using the normal font properties such as text-align, font size and text decoration. <br/> You can set borders but in order to make them collapse set the border-collapse to collapse in your css file.</p> 
+            </section>
+            <section class="setup">
+                <h2>Setting up your Html File</h2>
+                <h3>Html Parts</h3>
+                <table id="htmlparts">
+                    <col span="1" style="width: 25%;">
+                    <thead>
+                         <tr>
+                             <th>Element</th>
+                             <th>Description</th>
+                         </tr>
+                     </thead>
+                  <tbody>
+                    <tr>
+                        <td>&lt!DOCTYPE html&gt</td>
+                        <td>This is the declaration that it is HTML5 and should be the very first entry in the file</td>               </tr>
+                      <tr>
+                          <td>&lthtml&gt tags</td>
+                          <td>This is the main container for your html file and must be the start and end of your file. You can add the language</td>
+                      </tr>
+                      <tr>
+                          <td>&lthead&gt</td>
+                          <td>This contains heading information for your html. Items inside are not displayed "on the page". It should include the title and a link to any extenal css files</td>
+
+                      </tr>
+                      <tr>
+                          <td>&ltbody&gt</td>
+                          <td>Contains the main html elements which will be displayed on the page. May be broken down into sections, navs, headers, mains and footers amongst others</td>
+                       </tr>
+                           
+                  </tbody>   
+                 
+             </table>
+             <p>These can be set up quickly by either creating a template html file with these elements already present or if you are using visual studio then type html:5 and press tab. This will create a skeleton html file for you</p>
+             <h3>Linking to an External CSS</h3>
+             <p>In your &ltheader&gt, use a &ltlink&gt tag. Point to the css using href='file location' and set the rel='stylesheet'. You can link to multiple style sheets if needed.</p>
+            </section>
+            <section class="css">
+                <h2>Setting up your CSS</h2>
+                <h3>Resetting Defaults</h3>
+                <p>It can be sensible to reset the browser defaults in your CSS file. This prevents unpredictable results as each browser has a different set of defaults that it works from. By setting your own defaults you can overide these from the start.</p>
+                <p>Consider setting the following global css defaults using the * selector</p>
+                <ul>
+                    <li>margin: 0;</li>
+                    <li>padding: 0;</li>
+                    <li>box-sizing:border-box;</li>
+                </ul>
+                <p>Additionally, you may wish to set the border-collapse: collapse; for table elements</p>
+
+            </section>
+
+    </main>
+    
+</body>
+</html>
